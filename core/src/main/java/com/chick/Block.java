@@ -17,6 +17,7 @@ public class Block implements Serializable {
     private Body body;
     private float width, height;
     private boolean isd =false;
+    //private boolean isd =false;
 
     public Block(World world, String texturePath, float x, float y, float width, float height) {
         this.texture = new Texture(texturePath);
