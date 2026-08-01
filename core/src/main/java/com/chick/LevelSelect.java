@@ -66,7 +66,7 @@ public class LevelSelect implements Screen {
         l2_Button.getImage().setFillParent(false);
         back_button.getImage().setFillParent(false);
 
-        // Add blur background image
+        // Add blur background image (selected one)
         blur_i = new Image(blur);
         blur_i.setSize(stage.getWidth(), stage.getHeight());
         blur_i.setPosition(0, 0);
