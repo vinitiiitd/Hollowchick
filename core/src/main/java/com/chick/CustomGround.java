@@ -54,7 +54,7 @@ public class CustomGround {
             pointsArray[i * 2 + 1] = groundPoints.get(i).y;
         }
 
-        // Set the points to the chain shape
+        // Set the points to the chain shape (custom collider)
         groundShape.createChain(pointsArray);
 
         // Create the fixture (physical properties)
