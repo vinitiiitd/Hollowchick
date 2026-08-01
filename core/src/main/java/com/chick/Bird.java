@@ -28,7 +28,7 @@ public class Bird implements Serializable {
         this.body = world.createBody(bodyDef);
         body.setUserData("bird");
 
-        // Shape and fixture
+        // Shape and fixture 
         CircleShape shape = new CircleShape();
         shape.setRadius(0.13f); // Adjust to bird size
 
@@ -41,6 +41,7 @@ public class Bird implements Serializable {
         shape.dispose();
     }
 
+    // get collision
     public Body getBody() {
         return body;
     }
