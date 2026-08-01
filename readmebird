@@ -1,0 +1,24 @@
+// this file contains all the information about the game //
+
+NAME - SANJAY KUMAR / 2023481
+NAME - VINIT GAUTAM / 2023598
+
+the whole game can be run through mouse pointer only, to run the game , you need to run the code
+by creating new configuration in android studio software
+
+steps to run the game:
+1. extracting the zip file you will see whole codes and assets inside it
+2. open android studio
+3. locate the files in android studio by tapping open project
+4. open with game name
+5. Now after openening the file go to build gradle
+6. now edit configurations (left upper from play button of code)
+7. in -cp select project.lwjgl3.main
+8. the you will be able to run the program
+
+
+CREDITS AND REFERENCES
+to view credits, run the game
+then go to the settings option
+you will be able to see credits bar
+tap it and there you go!!!

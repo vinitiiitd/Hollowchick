@@ -1,0 +1,207 @@
+@startuml
+
+package com.chick {
+    class chick extends Game {
+        - Music backgroundMusic
+        - Music newBackgroundMusic
+        - SpriteBatch batch
+        - Texture customCursorTexture
+        - Viewport viewport
+        - Sound clickSound
+        - Sound hover
+        - Boolean clickEnabled
+        - Boolean hoverEnabled
+        - Boolean backenabled
+
+        + void create()
+        + void render()
+        + void switchToNewBackgroundMusic()
+        + Music getBackgroundMusic()
+        + Music getNewBackgroundMusic()
+        + Sound getclickSound()
+        + Sound gethover()
+        + void setclickSound(Sound click)
+        + void sethover()
+        + Boolean isClickEnabled()
+        + void setClickEnabled(boolean clickEnabled)
+        + Boolean isHoverEnabled()
+        + void setHoverEnabled(boolean hoverEnabled)
+        + Boolean isback()
+        + void setback(boolean backenabled)
+        + void resize(int width, int height)
+        + void dispose()
+    }
+
+    Game <|-- chick
+}
+
+package com.chick {
+    class bird {
+        - Texture texture
+        - float x
+        - float y
+        - float width
+        - float height
+        - Image blur_i
+
+        + bird(String imagePath, float x, float y, float width, float height)
+        + void render(SpriteBatch batch)
+        + void render_image(Stage stage)
+        + void dispose()
+    }
+
+    bird ..> Texture : uses
+    bird ..> SpriteBatch : uses
+    bird ..> Stage : uses
+    bird ..> Image : uses
+}
+
+
+package com.chick {
+    class block {
+        - Texture texture
+        - float x
+        - float y
+        - float width
+        - float height
+        - Image blur_i
+
+        + block(String imagePath, float x, float y, float width, float height)
+        + void render(SpriteBatch batch)
+        + void render_image(Stage stage)
+        + void dispose()
+    }
+
+    block ..> Texture : uses
+    block ..> SpriteBatch : uses
+    block ..> Stage : uses
+    block ..> Image : uses
+}
+
+
+package com.chick {
+    class catapult {
+        - Texture texture
+        - float x
+        - float y
+        - float width
+        - float height
+        - Image blur_i
+
+        + catapult(String imagePath, float x, float y, float width, float height)
+        + void render(SpriteBatch batch)
+        + void render_image(Stage stage)
+        + void dispose()
+    }
+
+    catapult ..> Texture : uses
+    catapult ..> SpriteBatch : uses
+    catapult ..> Stage : uses
+    catapult ..> Image : uses
+}
+
+
+package com.chick {
+    class credits implements Screen {
+        - Stage stage
+        - chick game
+        - Viewport viewport
+        - Texture blur
+        - Texture back
+        - Image blur_i
+        - Image back_i
+        - Sound clickSound
+        - Sound hoverSound
+
+        + credits(chick game)
+        + void show()
+        + void render(float delta)
+        + void resize(int width, int height)
+        + void pause()
+        + void resume()
+        + void hide()
+        + void dispose()
+
+        - void addHoverEffect1(ImageButton button, float originalWidth, float originalHeight)
+        - void addHoverEffect(Image image, float originalWidth, float originalHeight)
+    }
+
+    credits ..> Stage : uses
+    credits ..> Viewport : uses
+    credits ..> Texture : uses
+    credits ..> Image : uses
+    credits ..> Sound : uses
+    credits ..> Screen : implements
+    credits ..> ImageButton : uses
+    credits ..> InputListener : uses
+    credits ..> ClickListener : uses
+    credits ..> GL20 : uses
+}
+
+package com.chick {
+class Custom {
+    - stage: Stage
+    - game: chick
+    - viewport: Viewport
+    - d_map: Texture
+    - f_map: Texture
+    - s_map: Texture
+    - blur: Texture
+    - back: Texture
+    - d_map_i: Image
+    - s_map_i: Image
+    - blur_i: Image
+
+    + Custom(chick)
+    + show(): void
+    + render(delta: float): void
+    + resize(width: int, height: int): void
+    + pause(): void
+    + resume(): void
+    + hide(): void
+    + dispose(): void
+    - addHoverEffect1(button: ImageButton, originalWidth: float, originalHeight: float): void
+    - addHoverEffect(image: Image, originalWidth: float, originalHeight: float): void
+}
+}
+package com.chick{
+    class Gameplay {
+        - stage: Stage
+        - game: chick
+        - batch: SpriteBatch
+        - viewport: Viewport
+        - pause: Texture
+        - blur: Texture
+        - win: Texture
+        - lose: Texture
+        - pause_i: Image
+        - blur_i: Image
+        - f_Button: ImageButton
+        - myBird: bird
+        - mycatapult: catapult
+        - mypig: pig
+        - block_1: block
+        - block_2: block
+        - block_3: block
+        - win_b: ImageButton
+        - lose_b: ImageButton
+
+        + Gameplay(chick)
+        + show(): void
+        + render(delta: float): void
+        + resize(width: int, height: int): void
+        + pause(): void
+        + resume(): void
+        + hide(): void
+        + dispose(): void
+        - addHoverEffect1(button: ImageButton, originalWidth: float, originalHeight: float): void
+    }
+}
+
+package com.chick{
+
+
+}
+@enduml
+
+
