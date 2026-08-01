@@ -140,7 +140,7 @@ public class MainScreen implements Screen {
                     game.getclickSound().play();
                 }
                 game.getBackgroundMusic().pause();
-                game.setScreen(new Loading(game, new Custom(game)));  // Pass the next screen
+                game.setScreen(new Loading(game, new Custom(game)));  // Pass the next screen of gameplay
                 game.getLOU2().play();
             }
         });
