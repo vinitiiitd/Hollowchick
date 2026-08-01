@@ -1,5 +1,6 @@
 package com.chick;
 
+// import all required libraries
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
