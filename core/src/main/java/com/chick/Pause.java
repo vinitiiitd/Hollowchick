@@ -44,7 +44,7 @@ public class Pause implements Screen {
         viewport = new FitViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         stage = new Stage(viewport);
 
-        // Load textures for buttons
+        // Load textures for buttons with images
         c = new Texture(Gdx.files.internal("game/C.png"));
         s = new Texture(Gdx.files.internal("Settings.png"));
         mm = new Texture(Gdx.files.internal("game/MM.png"));
