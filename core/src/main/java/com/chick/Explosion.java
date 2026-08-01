@@ -38,7 +38,7 @@ public class Explosion {
         // Update the elapsed time
         elapsedTime += delta;
 
-        // Check if the animation has finished
+        // Check if the animation has finished or not
         if (explosionAnimation.isAnimationFinished(elapsedTime)) {
             isFinished = true;
         }
