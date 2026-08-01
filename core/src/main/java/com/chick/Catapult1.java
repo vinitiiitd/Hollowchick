@@ -34,7 +34,7 @@ public class Catapult1 {
 
         // Render the rubber band (for visual pull-back effect)
         if (isDragging) {
-            // You could draw a line or texture to simulate a rubber band here
+            // we can draw a line or texture to simulate a rubber band here
             // Use LibGDX's ShapeRenderer if you want a line effect
         }
     }
