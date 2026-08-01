@@ -54,7 +54,7 @@ public class CustomTower implements Screen {
         ImageButton preview_Button = new ImageButton(new TextureRegionDrawable(preview));
         ImageButton done_Button = new ImageButton(new TextureRegionDrawable(done));
 
-        // Set positions and sizes
+        // Set positions and sizes of buttons
         next_Button.setPosition(490, 200);
         next_Button.setSize(70, 35);
 
