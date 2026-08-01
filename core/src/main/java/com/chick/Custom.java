@@ -73,7 +73,7 @@ public class Custom implements Screen {
         blur_i.setPosition(0, 0);
         stage.addActor(blur_i);
 
-        // Non-clickable images
+        // static images ( non clickable )
 //        s_map_i = new Image(s_map);
 //        s_map_i.setPosition(405, 54);
 //        s_map_i.setSize(320, 350);
