@@ -331,7 +331,7 @@ public class Gameplay3 implements Screen {
         groundBody.createFixture(fixtureDef);
 
         chainShape.dispose();
-    }
+    } // unknown
 
     private void drawTrajectory(Vector2 launchImpulse) {
         shapeRenderer.setProjectionMatrix(camera.combined);
