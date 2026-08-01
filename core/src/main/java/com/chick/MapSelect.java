@@ -78,6 +78,8 @@ public class MapSelect implements Screen {
 //        s_map_i.setPosition(405, 78);
 //        s_map_i.setSize(sMapOriginalWidth, sMapOriginalHeight);
 
+        //we may not require these images
+
         Select_map_i = new Image(Select_map);
         Select_map_i.setPosition(204, 390);
         Select_map_i.setSize(selectMapOriginalWidth, selectMapOriginalHeight);
